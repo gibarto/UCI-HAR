@@ -65,9 +65,20 @@ colnames(ct)<-label
 ## 3. Use descriptive activity names to name the activities in the data
 ## set.
 
+## names pulled from activity_labels.txt and converted to use as factors
+actLab<-read.table("activity_labels.txt")
+actLev<-c(as.vector(actLab[,2]))
 
-## 4. Appropriately label the data set with descriptive activity names. 
+## 4. Appropriately label the data set with descriptive activity names.
 
+## Activity column converted to factors; factors reassigned
+actList<-as.factor(ct[,2])
+levels(actList)<-actLev
+ct[,2]<-actList
+
+rm(actLev)
+rm(actList)
+rm(actLab)
 
 ## 5. Create a second, independent tidy data set with the average of each
 ## variable for each activity and each subject.
