@@ -1,5 +1,7 @@
 Codebook
 
+The Readme file shows the specific code transformations. The below provides a key to understanding the dataset yielded, cleanTable.
+
 Quoting from the UCI HAR dataset file, "features_info.txt":
 
 * * *
