@@ -82,4 +82,6 @@ rm(actLab)
 
 ## 5. Create a second, independent tidy data set with the average of each
 ## variable for each activity and each subject.
-
+cleanTable<-aggregate(ct[,3:81], list(Subject=ct$Subject, Activity=ct$Activity), mean)
+cleanTable<-data.frame(cleanTable, row.names=NULL)
+cleanTable ## return cleaned table
