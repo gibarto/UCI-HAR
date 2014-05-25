@@ -34,13 +34,13 @@ fBodyGyroJerkMag
 For the purposes of this project, variables are only used relating to the mean and standard deviation.
 
 The activities are:
-  Y file      cleanTable
-1  1            WALKING
-2  2   WALKING_UPSTAIRS
-3  3 WALKING_DOWNSTAIRS
-4  4            SITTING
-5  5           STANDING
-6  6             LAYING
+|row|Y|cleanTable
+|1  |1|WALKING
+|2  |2|WALKING_UPSTAIRS
+|3  |3|WALKING_DOWNSTAIRS
+|4  |4|SITTING
+|5  |5|STANDING
+|6  |6|LAYING
 
 Below is the correspondence between the cleaned up dataset and the original for the other variables:
 
