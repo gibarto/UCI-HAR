@@ -33,6 +33,7 @@ fBodyGyroJerkMag
 * * *
 
 For the purposes of this project, variables are only used relating to the mean and standard deviation.
+The activity correspondences from the "Y" files are:
 <pre>
 |row|Y|cleanTable
 |1  |1|WALKING
@@ -132,3 +133,5 @@ Below is the correspondence between the cleaned up dataset and the original for 
 85                 angleY,gravityMean                 angle(Y,gravityMean)
 86                 angleZ,gravityMean                 angle(Z,gravityMean)
 </pre>
+
+The cleaned up data set shows the average by subject for each activity. The table runs through each activity, person by person, with data aggregated by mean.
