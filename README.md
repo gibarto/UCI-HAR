@@ -5,8 +5,10 @@ Pulls together and summarizes UCI HAR dataset
 
 Data drawn from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-run_analysis.R 
+run_analysis.R
+
 1) gathers data from UCI HAR dataset from the following files:
+
   working directory:
     features.txt
     activity_labels.txt
