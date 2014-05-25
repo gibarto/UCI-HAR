@@ -11,7 +11,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
+<pre>
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
@@ -29,11 +29,11 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
+</pre>
 * * *
 
 For the purposes of this project, variables are only used relating to the mean and standard deviation.
-
-The activities are:
+<pre>
 |row|Y|cleanTable
 |1  |1|WALKING
 |2  |2|WALKING_UPSTAIRS
@@ -41,9 +41,9 @@ The activities are:
 |4  |4|SITTING
 |5  |5|STANDING
 |6  |6|LAYING
-
+</pre>
 Below is the correspondence between the cleaned up dataset and the original for the other variables:
-
+<pre>
                                 label                             labelOld
 1                       tBodyAccMeanX                    tBodyAcc-mean()-X
 2                       tBodyAccMeanY                    tBodyAcc-mean()-Y
@@ -131,3 +131,4 @@ Below is the correspondence between the cleaned up dataset and the original for 
 84                 angleX,gravityMean                 angle(X,gravityMean)
 85                 angleY,gravityMean                 angle(Y,gravityMean)
 86                 angleZ,gravityMean                 angle(Z,gravityMean)
+</pre>
