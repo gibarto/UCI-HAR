@@ -45,13 +45,22 @@ ct<-rbind(train,test)
 rm(train)
 rm(test)
 
-
-
 ## 2. Extract only the measurements on the mean and standard deviation
 ## for each measurement.
 ct1<-data.frame(ct[,1:2])
 ct2<-ct[,grep('mean|std', names(ct))]
 ct<-cbind(ct1,ct2)
+rm(ct1)
+rm(ct2)
+
+## Clean up main labels
+label<-colnames(ct)
+label<-gsub("\\(","",label)
+label<-gsub("\\)","",label)
+label<-gsub("mean","Mean",label)
+label<-gsub("std", "Std", label)
+label<-gsub("\\-", "", label)
+colnames(ct)<-label
 
 ## 3. Use descriptive activity names to name the activities in the data
 ## set.
