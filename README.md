@@ -25,4 +25,10 @@ run_analysis.R
   
 2) consolidates the data for averages and standard deviations into the table, ct, using camelStyle column names to allow for improved readability
 
+3 and 4) creates meaningful names for activities and applies them to the data frame
+
+5) creates and returns a data frame that shows the average statistic for each subject by activity
+
+After running source, the R environment should include data frame ct, with the figures for each person, and cleanTable, with the averages by person and activity. Copies of the results have been uploaded to this repository.
+
 
